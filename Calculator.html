@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
+       <style>
+           body {
+    
+}
+.i{
+   width:85%;
+   height:50px;
+   background-color:white;
+   border:none;
+   position:relative ;
+   margin:auto ;
+   border-radius:8px;
+   top:60px;
+   font-weight:bold;
+   font-size:25px;
+   text-align:right;
+   font-family: "Roboto Mono",monospace;
+   outline:none;
+}
+
+input[type=button]{
+    width:60px;
+    height:60px;
+    box-shadow:  5px 5px 10px #d9d9d9, -5px -5px 10px #fff;
+    border:none;
+    line-height:30px;
+    border-radius:50%;
+    font-size:18px;
+    text-align:center ;
+    background:#ececec;
+    font-weight:bold;
+    left:2vh;
+    top:6vh;
+    position:relative ;
+    outline:none;
+    margin:3px;
+    background-color:whitesmoke;
+     font-family:'Nunito', sans-serif;
+}
+input[type=button]:active{
+    box-shadow: inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ececec;
+}
+.can{
+    width:80%;
+    height:530px;
+    background-color:white;
+    box-shadow:0 0 5px grey;
+    position:relative ;
+    margin:auto ;
+    border:1px solid ;
+    top:80px;
+    border-radius:10px;
+}
+       </style>
+    </head>
+    <body>
+    <div class="can">
+       <form name ="cal">
+<center><input class="i" type="text" name ="display"disabled></center>
+<br><br>
+
+<input  type="button" value ="7" onclick ="cal.display.value+='7'">
+<input type="button" value="8" onclick="cal.display.value+='8'">
+<input 
+ type="button" value="9"onclick="cal.display.value+='9'">
+<input  type="button" value="×"onclick="cal.display.value+='*'">
+<br><br>
+<input  type="button" value="6"onclick="cal.display.value+='6'">
+<input  type="button" value="5"onclick="cal.display.value+='5'">
+
+<input  type="button" value="4"onclick="cal.display.value+='4'">
+<input  type="button" value="÷"onclick="cal.display.value+='/'">
+<br><br>
+<input  type="button" value="3"onclick="cal.display.value+='3'">
+
+<input  type="button" value="2"onclick="cal.display.value+='2'">
+<input  type="button" value="1"onclick="cal.display.value+='1'">
+<input  type="button" value="-"onclick="cal.display.value+='-'">
+<br><br>
+<input  type="button" value ="0" onclick ="cal.display.value+='0'">
+<input type="button" value ="+" onclick ="cal.display.value+='+'">
+<input type="button" value ="%" onclick ="cal.display.value+='%'">
+<input  type="button" value ="=" onclick ="cal.display.value =eval(cal.display.value)">
+<input type="button" value ="C" onclick ="cal.display.value=''">
+<input type="button" value ="." onclick ="cal.display.value+='.'">
+<input type="button" value ="," onclick ="cal.display.value+=','">
+<input type="button" value ="-" onclick ="cal.display.value+='-'">
+<br><br>
+
+
+
+
+
+</form>
+</div>
+    </body>
+</html>
